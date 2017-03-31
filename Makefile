@@ -8,7 +8,8 @@ NPM_REGISTRY = ""
 all: test
 
 install:
-	@npm install $(NPM_REGISTRY)
+	# to resolve symlinks on shared folders between windows/virtualBox '--no-bin-links'
+	@npm install --no-bin-links $(NPM_REGISTRY)
 
 pretest:
 	@if ! test -f config.js; then \
