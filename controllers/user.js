@@ -125,11 +125,28 @@ exports.setting = function (req, res, next) {
     var location = validator.trim(req.body.location);
     var weibo = validator.trim(req.body.weibo);
     var signature = validator.trim(req.body.signature);
-
+    var education = validator.trim(req.body.education);
+    var sex = validator.trim(req.body.sex);
+    var marital = validator.trim(req.body.marital);
+    var age = validator.trim(req.body.age);
+    var career = validator.trim(req.body.career);
+    var house = validator.trim(req.body.house);
+    var car = validator.trim(req.body.car);
+    var height = validator.trim(req.body.height);
+    var weight = validator.trim(req.body.weight);
+    var phone = validator.trim(req.body.phone);
     User.getUserById(req.session.user._id, ep.done(function (user) {
       user.url = url;
       user.location = location;
+      user.education = education;
+      user.sex = sex;
+      user.marital = marital;
       user.signature = signature;
+      user.age = age;
+      user.career = career;
+      user.height = height;
+      user.weight = weight;
+      user.phone = phone;
       user.weibo = weibo;
       user.save(function (err) {
         if (err) {

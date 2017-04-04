@@ -30,6 +30,96 @@
           </div>
         </div>
         <div class='control-group'>
+          <label class='control-label' for='sex'>性别</label>
+
+          <div class='controls'>
+            <input class='input-xlarge' id='sex' name='sex' size='30' type='text' value="<%= sex %>"/>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='location'>所在地点</label>
+
+          <div class='controls'>
+            <input class='input-xlarge' id='location' name='location' size='30' type='text'
+                   value="<%= location %>"/>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='marital'>婚否</label>
+
+          <div class='controls'>
+            <input class='input-xlarge' id='marital' name='marital' size='30' type='text' value="<%= marital %>""/>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='age'>年龄</label>
+
+          <div class='controls'>
+            <input class='input-xlarge readonly' id='age' name='age' size='30' type='text'
+                   value="<%= age %>"/>
+              </select>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='career'>职业</label>
+
+          <div class='controls'>
+            <input class='input-xlarge readonly' id='career' name='career' size='30' type='text'
+                   value="<%= career %>"/>
+              </select>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='house'>房</label>
+
+          <div class='controls'>
+            <input class='input-xlarge readonly' id='house' name='house' size='30' type='text'
+                   value="<%= house %>"/>
+              </select>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='car'>车</label>
+
+          <div class='controls'>
+            <input class='input-xlarge readonly' id='car' name='car' size='30' type='text'
+                   value="<%= car %>"/>
+              </select>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='education'>学历</label>
+
+          <div class='controls'>
+            <input class='input-xlarge' id='education' name='education' size='30' type='text' value="<%= education %>"/>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='height'>身高</label>
+
+          <div class='controls'>
+            <input class='input-xlarge readonly' id='height' name='height' size='30' type='text'
+                   value="<%= height %>"/>
+              </select>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='weight'>体重</label>
+
+          <div class='controls'>
+            <input class='input-xlarge readonly' id='weight' name='weight' size='30' type='text'
+                   value="<%= weight %>"/>
+              </select>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='phone'>电话</label>
+
+          <div class='controls'>
+            <input class='input-xlarge' id='phone' name='phone' size='30' type='text' value="<%= phone %>"/>
+          </div>
+        </div>
+        <div class='control-group'>
           <label class='control-label' for='email'>电子邮件</label>
 
           <div class='controls'>
@@ -41,15 +131,7 @@
           <label class='control-label' for='url'>个人网站</label>
 
           <div class='controls'>
-            <input class='input-xlarge' id='url' name='url' size='30' type='text' value="<%= typeof(url) !== 'undefined' ? url : '' %>"/>
-          </div>
-        </div>
-        <div class='control-group'>
-          <label class='control-label' for='location'>所在地点</label>
-
-          <div class='controls'>
-            <input class='input-xlarge' id='location' name='location' size='30' type='text'
-                   value="<%= typeof(location) !== 'undefined' ? location : '' %>"/>
+            <input class='input-xlarge' id='url' name='url' size='30' type='text' value="<%= url %>"/>
           </div>
         </div>
 
@@ -57,7 +139,7 @@
           <label class='control-label' for='weibo'>微博</label>
 
           <div class='controls'>
-            <input class='input-xlarge' id='weibo' name='weibo' size='30' type='text' value="<%= typeof(weibo) !== 'undefined' ? weibo : '' %>"
+            <input class='input-xlarge' id='weibo' name='weibo' size='30' type='text' value="<%= weibo %>"
                    placeholder="e.g. http://weibo.com/yourID"/>
           </div>
         </div>
@@ -65,7 +147,7 @@
           <label class='control-label' for='signature'>个性签名</label>
 
           <div class='controls'>
-            <textarea class='input-xlarge' id='signature' name='signature' size='30'><%= typeof(signature) !== 'undefined' ? signature : "" %></textarea>
+            <textarea class='input-xlarge' id='signature' name='signature' size='30'><%= signature %></textarea>
           </div>
         </div>
         <input type='hidden' id='action' name='action' value='change_setting'/>
